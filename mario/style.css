@@ -140,3 +140,21 @@ section.join p::selection{
 P:after{
     content:"..."
 }
+@media screen and (max-weight:1400px){
+   .banner .welcome h2{
+    font-size: 60px;
+   }
+   nav li{
+    font-size: 18px;
+   }
+}
+   @media screen and (max-width:1400px){
+    .banner .welcome h2{
+        font-size:60px;
+    }
+    nav li{
+        font-size:18px;
+
+    }
+   }
+    

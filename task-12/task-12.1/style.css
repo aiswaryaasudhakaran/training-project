@@ -1,0 +1,56 @@
+/* .walpaper{
+ background:#fff;
+ max-width:960px;
+ margin:0 auto;
+ padding:200px;
+ 
+}
+.walpaper:after{
+    content:"";
+    display:block;
+    clear:both;
+}
+img{
+    float:right;
+    margin:10px;
+} */
+/* .blue{
+    background: blue;
+
+}
+.red{
+    background:red;
+    
+}
+.green{
+    background:green;
+    height: 120px;
+}
+.box{
+    height:100px;
+
+} */
+.services:after{
+    content:"";
+    display:block;
+    clear:both;
+}
+.service h2, .service p{
+    color:#999;
+    margin: 10px 0;
+    text-align:center;
+}
+.service{
+    float:left;
+    background:#eee;
+    width:29%;
+    margin:1%;
+    padding:1%;
+    height:140px;
+}
+.content{
+    padding:10px;
+    background:#ccc;
+    clear:right;
+    margin-top:50px;
+}

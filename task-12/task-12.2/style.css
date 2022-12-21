@@ -1,4 +1,4 @@
-.walpaper{
+/* .walpaper{
  background:#fff;
  max-width:960px;
  margin:0 auto;
@@ -13,4 +13,20 @@
 img{
     float:right;
     margin:10px;
+} */
+.blue{
+    background: blue;
+
+}
+.red{
+    background:red;
+    
+}
+.green{
+    background:green;
+    height: 120px;
+}
+.box{
+    height:100px;
+
 }

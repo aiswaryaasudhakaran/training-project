@@ -50,7 +50,26 @@ img{
 }
 .content{
     padding:10px;
-    background:#ccc;
-    clear:right;
-    margin-top:50px;
+    clear:left;
+    margin:20px 1%;
+}
+.content p{
+    -webkit-column-count:3;
+    column-count:3;
+    -webkit-column-gap: 50px;
+    column-gap:50px;
+    -webkit-column-rule:1px solid #ccc;
+    text-align: justify;
+
+}
+section, aside{
+    float:left;
+    width:46%;
+    padding:1%;
+    margin:1%;
+    background:#f2f2f2;
+}
+.column after{
+   display:block;
+   content:"";
 }

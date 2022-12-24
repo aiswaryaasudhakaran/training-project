@@ -17,14 +17,16 @@ body{
 .box{
     height:100px;
     min-width:100px;
-    flex-grow:1;
 }
 .one{
     background:red;
+    flex-grow:1;
 }
 .two{
     background:blue;
+    flex-grow:2;
 }
 .three{
     background:green;
+    flex-grow:3;
 }

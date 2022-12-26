@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>menu with flex box</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+       <div class="wrapper">
+        <nav>
+            <ul>
+                <li><a href="">Home</a></li>
+                <li><a href="">About</a></li>
+                <li><a href="">Store</a></li>
+                <li><a href="">Contact</a></li>
+            </ul>
+            <ul class="social">
+                <li><a href =""class="fb">Facebook</a></li>
+                <li><a href="" class="tw">Twitter</a></li>
+            </ul>
+        </nav>
+        <div style="margin:20px;">
+            <span>layout:</span>
+            <a href="#" class="stack">Stack</a>
+            <a href="#" class="grid">Grid</a>
+        </div>
+        <section id="blocks">
+            <article>
+                    <h2> I pity the fool...</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero, esse officia quo aliquam quis sed omnis placeat maxime reiciendis voluptatum quaerat sunt iste natus eaque dolorum quod voluptates et asperiores.deorem ipsum dolor sit amet consectetur adipisicing elit. Ab quod quibusdam veritatis vero repellat minus minima accusantium quo sapiente rerum maiores quidem fugit, illum pariatur provident velit laudantium blanditiis natus.</p>
+                </article>
+                <article>
+                    <h2>To the chooper...</h2>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Soluta distinctio, accusantium porro facilis nemo sint reprehenderit. Commodi, vitae. A, nulla. Voluptates recusandae, placeat ratione veritatis quis nam obcaecati fuga dolore. Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque voluptatem placeat nisi eos aliquam ullam? Unde eaque sunt eum sapiente veritatis veniam quos exercitationem sit enim reiciendis ea, illo dolores.
+                    </p>
+                </article>
+                <article>
+                    <h2>Whats a horse doing on a spaceship...</h2>
+                    <p> ipsum dolor sit amet consectetur adipisicing elit. Vitae voluptatum voluptatem animi, sequi, quia rerum dicta inventore rem perferendis adipisci ipsum, nesciunt quis corrupti illo. Eveniet rerum exercitationem iste maiores?</p>
+            </article>
+            <article>
+                <h2> I pity the fool...</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero, esse officia quo aliquam quis sed omnis placeat maxime reiciendis voluptatum quaerat sunt iste natus eaque dolorum quod voluptates et asperiores.deorem ipsum dolor sit amet consectetur adipisicing elit. Ab quod quibusdam veritatis vero repellat minus minima accusantium quo sapiente rerum maiores quidem fugit, illum pariatur provident velit laudantium blanditiis natus.</p>
+            </article>
+            <article>
+                <h2>To the chooper...</h2>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Soluta distinctio, accusantium porro facilis nemo sint reprehenderit. Commodi, vitae. A, nulla. Voluptates recusandae, placeat ratione veritatis quis nam obcaecati fuga dolore. Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque voluptatem placeat nisi eos aliquam ullam? Unde eaque sunt eum sapiente veritatis veniam quos exercitationem sit enim reiciendis ea, illo dolores.
+                </p>
+            </article>
+            <article>
+                <h2>Whats a horse doing on a spaceship...</h2>
+                <p> ipsum dolor sit amet consectetur adipisicing elit. Vitae voluptatum voluptatem animi, sequi, quia rerum dicta inventore rem perferendis adipisci ipsum, nesciunt quis corrupti illo. Eveniet rerum exercitationem iste maiores?</p>
+        </article>
+
+        </section>
+       </div>
+       <script>
+        $("a.stack").on("click", function(){
+            $("article").addClass("stack");
+        });
+        $("a.grid").on("click", function(){
+            $("article").removeClass("slack");
+        });
+       </script>
+    </body>
+</html>

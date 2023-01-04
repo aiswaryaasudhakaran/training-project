@@ -1,0 +1,127 @@
+*{
+   padding:0;
+   margin:0;
+   box-sizing:border-box; 
+}
+body{
+   overflow:hidden; 
+}
+@font-face {
+    font-family:Segoe UI',Halvetica Neue',helvetica,Arial,sans-serif;
+    src:url("https://vonnue.slack.com/archives/D04GHEHCZQX/p1672816387199859");
+}
+header{
+    background-color:white;
+    display:flex;
+    justify-content:space-between;
+    padding:12px;
+}
+.open{
+    display:flex;
+    padding:13px;
+    transform:translateY(3px);
+}
+.signin{
+    display:flex;
+    padding:12px;
+    margin-top:-7px;
+}
+.signin a{
+    margin:12px;
+    font-size:22px;
+    color:#1a1a1f;
+    text-decoration:none;
+    white-space:nowrap;
+}
+.explore{
+    display:none;
+    margin-top:12px;
+    margin-left:22px;
+    font-size:13px;
+}
+.signin{
+    transform:scale(0.8);
+}
+.signin p{
+    display:none;
+}
+/* mobile styles */
+@media screen and (min-width:320px) {
+header{
+   display:flex;
+}
+.open h3{
+    
+    font-family:'Segoe UI',Halvetica Neue,helvetica,Arial,sans-serif;
+    margin-left:12px;
+    font-size:20px;
+    color:#1a1a1f;
+}
+.microsoft{
+    margin-left:10px;
+    margin-top:10px;
+    min-width:12px;
+}
+.signin img{
+    margin: 4 40 4 0;
+    margin-top:2px;
+    transform:scale(0.8);
+}
+.signin a{
+    white-space:nowrap;
+    font-size:18px;
+    margin-top:12px;
+    margin-left:10px;
+}
+
+}
+/* tablet screen */
+@media screen and (min-width: 768px){
+    header{
+        width:100%;
+        position:relative;
+        border-bottom:1px solid transparent;
+    }
+    header .explore{
+       display:flex;
+    }
+    .open svg{
+        display:none; 
+    }
+    div.explore a{
+       color:#1a1a1f;
+       text-decoration:none;
+    }
+    div.explore i{
+        padding-right:20px;
+    }
+    .open h3{
+        margin-right:-10px;
+        margin-top:-5px;
+    }
+    .signin{
+        margin-left:2%;
+    }
+    .signin a{
+        white-space:nowrap;
+        margin-top:2px;
+        transform:translateY(10px);
+    }
+    .signin p{
+        display: flex;
+        font-size:25px;
+        margin-top:2px;
+    }
+    .signin img{
+        margin: 4 20 4 0;
+        margin-top:2px;
+        transform:scale(0.8);
+    }
+    div .open h3{
+        margin-left:10px;
+    }
+    .microsoft{
+        transform:scale(0.8);
+        transform:translateX(-570px);
+    }
+}

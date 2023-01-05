@@ -4,124 +4,236 @@
    box-sizing:border-box; 
 }
 body{
-   overflow:hidden; 
+   overflow:hidden;
+    font-family: font;
 }
 @font-face {
-    font-family:Segoe UI',Halvetica Neue',helvetica,Arial,sans-serif;
-    src:url("https://vonnue.slack.com/archives/D04GHEHCZQX/p1672816387199859");
+    font-family:font;
+    src: url(img/SegoeUI-Roman-VF_web\ \(7\).woff2);
 }
 header{
     background-color:white;
     display:flex;
     justify-content:space-between;
-    padding:12px;
+    align-items:center; 
+    padding:20px;
+    margin-top:2px;
+    margin-left:10px;
+}
+.open img{
+    text-align:left;
+    margin-left:-7px;
 }
 .open{
     display:flex;
-    padding:13px;
-    transform:translateY(3px);
+    transform:translateY(2px);
+}
+.open h3{
+    font-size:16px;
+    margin-top:2px;
+    margin-left:12px;
+}
+.microsoft{
+    display:flex;
+    justify-content:center;
+    margin-left:25px;
+
 }
 .signin{
     display:flex;
-    padding:12px;
-    margin-top:-7px;
+    align-items:center;
+    justify-content:flex-end;
+    margin-right:-5px;
+}
+div.signin img{
+    height:18px;
+    width:18px;
+    margin-right:34px;
+
 }
 .signin a{
-    margin:12px;
-    font-size:22px;
+    padding:-4px;
+    font-size:14px;
     color:#1a1a1f;
     text-decoration:none;
     white-space:nowrap;
 }
+
 .explore{
     display:none;
-    margin-top:12px;
-    margin-left:22px;
-    font-size:13px;
 }
-.signin{
-    transform:scale(0.8);
-}
-.signin p{
+.microsoft2{
     display:none;
 }
-/* mobile styles */
-@media screen and (min-width:320px) {
-header{
-   display:flex;
+.lens{
+    display:none;
 }
-.open h3{
-    
-    font-family:'Segoe UI',Halvetica Neue,helvetica,Arial,sans-serif;
-    margin-left:12px;
-    font-size:20px;
-    color:#1a1a1f;
+.heading{
+    display:none;
 }
-.microsoft{
-    margin-left:10px;
-    margin-top:10px;
-    min-width:12px;
+ .search input{
+    display:none;
 }
-.signin img{
-    margin: 4 40 4 0;
-    margin-top:2px;
-    transform:scale(0.8);
+.search img{
+    display:none;
 }
-.signin a{
-    white-space:nowrap;
-    font-size:18px;
-    margin-top:12px;
-    margin-left:10px;
+.learn a{
+    display:none;
+}
+.learn button{
+    display:none;
 }
 
-}
 /* tablet screen */
-@media screen and (min-width: 768px){
-    header{
-        width:100%;
-        position:relative;
-        border-bottom:1px solid transparent;
+
+ @media screen and (min-width: 768px){
+  .tablet{
+       display:flex; 
+       justify-content:space-between;
+       align-items:center;
+       text-decoration: none; 
+       margin-top:-20px;
     }
-    header .explore{
-       display:flex;
+  
+    .search img{
+        display:none;
     }
-    .open svg{
+    .open {
         display:none; 
     }
-    div.explore a{
-       color:#1a1a1f;
-       text-decoration:none;
-    }
-    div.explore i{
-        padding-right:20px;
-    }
-    .open h3{
-        margin-right:-10px;
-        margin-top:-5px;
+    .microsoft{
+        display:none;
     }
     .signin{
-        margin-left:2%;
+        display:none;
     }
-    .signin a{
+    .learn a{
+        display:none;
+    }
+    .learn button{
+        display:none;
+    }
+    header .explore {
+       display:block;
+
+    }
+    header .heading{
+        font-size:16px;
+        display:flex;
+        padding:0px 0px 0px 12px;
+    }
+    header .lens{
+        display:flex;
+        align-items:center;
+    
+    }
+    header .microsoft2{
+        width:100%;
+        display:flex;
+        margin-left:-5px;
+    }
+    .explore{
+        padding:12px;
+        white-space:nowrap;display:flex;
+        justify-content:left;
+    }
+    .explore a{
+        text-decoration: none;
+        color:#1a1a1f;
+        font-size:13px;
+        font-family:'Segoe UI',SegoeUI,'Helvetica Neue',Helvetica,Arial,sans-serif;
+    }
+    .explore i{
+        margin:7px;
+    }
+     .lens{
+        display:flex;
+        justify-content:left;
+        margin-left:25px;
+     }
+    .lens p{
+        margin:3px;
+        font-size:27px;
+        margin-top:-11px;
+        padding:15px 8px;
+    }
+    .lens img{
+        transform: scale(0.6);
+        padding:1px 6px;
+    }
+    .lens a{
+        text-decoration:none;
+        color:#1a1a1f;
+        font-size:13px;
         white-space:nowrap;
-        margin-top:2px;
-        transform:translateY(10px);
+        padding:20px 8px;
     }
-    .signin p{
-        display: flex;
-        font-size:25px;
-        margin-top:2px;
+ }
+ /* desktop screen */
+ 
+ @media screen and (min-width:1080px) {
+    .desktop{
+        display:flex;
+        margin-top:-4px;
+        margin-inline: auto;
     }
-    .signin img{
-        margin: 4 20 4 0;
-        margin-top:2px;
-        transform:scale(0.8);
-    }
-    div .open h3{
-        margin-left:10px;
-    }
-    .microsoft{
-        transform:scale(0.8);
-        transform:translateX(-570px);
-    }
+ header .lens {
+    display:none;
+}
+.search{
+    display:flex;
+}
+.search input{
+    display:flex;
+    background-color:#f8f9fa;
+    border-radius:4px;
+    border-color:#747479;
+    color:#4c4c51;
+    font-size:13px;
+    padding:1px 24px 1px 12px;
+    box-sizing:border-box;
+    border:1px solid #747479;
+    line-height:1.2;
+    width:123px;
+    height:32px;
+}
+ .search img{
+    display:flex;
+    height:18px;
+    width:18px;
+    margin-top:7px;
+    transform: translateX(-32px);
+}
+.explore{
+    margin-left:58px;
+    font-size:12px;
+}
+.learn{
+    display:flex;
+}
+header .microsoft2{
+    width:24px;
+    height:23.25px;
+
+}
+.learn a{
+    display:flex;
+    text-decoration:none;
+    font-size:13px;
+    padding:8px;
+    color:#1a1a1f;
+    padding:10px;
+    white-space:nowrap;
+}
+.learn button{
+    display:block;
+    font-size:12px;
+    background:#89c402;
+    margin:0px 6px;
+    padding:9px;
+    border:none;
+    border-radius:4px;
+    height:32px;
+    width:89.57px;
+}
 }

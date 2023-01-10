@@ -15,6 +15,7 @@ body{
    overflow:none;
     font-family: 'Segoe UI';
     color: #1a1a1f;
+    padding-bottom:100px;
 }
 header{
     background-color:white;
@@ -112,7 +113,8 @@ div.signin img{
     display:flex;
     object-fit:cover;
     width:100%;
-    height:100%;
+   height:850px;
+
 }
 .banner img{
     width:100%;
@@ -133,8 +135,6 @@ div.signin img{
     line-height:1.2;
     margin-top:55px;
     font-family: 'Segoe UI',SegoeUI,'Helvetica Neue',Helvetica,Arial,sans-serif;
-
-    /* letter-spacing:0.07ch; */
 }
 .paragraph{
     position: absolute;
@@ -193,6 +193,9 @@ div.signin img{
     text-align:left;
     width:66%;
 }
+.list-cards{
+  padding:0 15px;
+}
 .list-cards img{
     width:100%;
     height: 100%;
@@ -229,6 +232,7 @@ div.signin img{
 }
 .new{
     text-align:center;
+    padding:50px 0;
 }
 .new p{
    margin-bottom:24px;
@@ -250,7 +254,158 @@ div.signin img{
    text-align:center;
    width:70%;
    height:41px;
-
+}
+.page3{
+    background-color:#f8f9fa;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+}
+.page3 h2{
+    font-size:20px;
+    font-family: 'Segoe UI',SegoeUI,'Helvetica Neue',Helvetica,Arial,sans-serif;
+    font-weight:600;
+    line-height:1.2;
+    text-align:center;
+    width:88%;
+    padding:40px 0;
+}
+.page3 .btn-ms{
+    align-items:center;
+    background-color:#fff;
+    border:0;
+    border-bottom:1px  solid #eaebec;
+    border-radius:4px;
+    box-shadow:0 2px 5px rgb(0 0 0/14%);
+    display:flex;
+    height:auto;
+    justify-content:space-between;
+    min-height:60px;
+    padding:12px 24px 12px 12px;
+    width:93%;
+}
+.btn-ms button{
+    background-color:#fff;
+    border:0;
+    color:#1a1a1f;
+    font-size:16px;
+    font-weight:600;
+    font-family:'Segoe UI',SegoeUI,'Helvetica Neue',Helvetica,Arial,sans-serif;
+}
+.btn-ms i{
+    padding:10px;
+    transform:scale(1.5);
+}
+.grids{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    column-gap:17px;
+    row-gap:20px;
+    padding-block:14px;
+    padding-inline:10px;
+}
+ .grid-card{
+     display:flex;
+     flex-direction:column;
+     justify-content:space-between;
+     margin:0;
+     text-align:center;
+     background-color:#fff;
+     border-radius:6px;
+     box-shadow:0 2px 5px rgb(0 0 0/14%);
+     color:#4c4c51;
+     padding:24px;
+     position:relative;
+     border:1px solid transparent;
+}
+.card-img img{
+    height:36px;
+    width:36px;
+}
+.card-img p{
+    font-size:14px;
+    color:#4c4c51;
+    font-family:'Segoe UI',SegoeUI,'Helvetica Neue',Helvetica,Arial,sans-serif;
+    margin-top:12px;
+}
+.card-a a{
+    color:#0062ad;
+    font-size:14px;
+}
+.btn-ma{
+    width: 93%;
+}
+.btn-ma .btns{
+    align-items:center;
+    background-color:#fff;
+    border:0;
+    border-bottom:1px  solid #eaebec;
+    border-radius:4px;
+    box-shadow:0 2px 5px rgb(0 0 0/14%);
+    display:flex;
+    height:auto;
+    justify-content:space-between;
+    min-height:60px;
+    padding:12px 12px 24px 15px;
+    width:100%;
+    margin-block:7px;
+}
+.btns button{
+    background-color:#fff;
+    border:0;
+    color:#1a1a1f;
+    font-size:16px;
+    font-weight:600;
+    font-family:'Segoe UI',SegoeUI,'Helvetica Neue',Helvetica,Arial,sans-serif;
+}
+.btns i{
+    padding:10px;
+    transform:scale(1.5);
+}
+.container{
+    display:flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items:center;
+}
+.container-btn{
+    display: none;
+}
+.products{
+  color:#0062ad;
+  font-size:14px;
+  font-weight:600;
+  padding-right:1em;
+  position:relative;
+  text-decoration:none;  
+  margin-block:10px;
+}
+/* .products a{
+    padding-right:4px;
+} */
+.products i{
+    transform: scale(1.5);
+    padding-left:4px;
+}
+.featured img{
+    width:100%;
+    height:100%;
+    border-radius:12px;
+    background-color: #000;
+    padding:3%;
+    box-shadow:0 10px 20px rgb(0 0 0/14%);
+}
+.featured{
+    display:flex;
+    justify-content:center;
+    width: 90%;
+    height: 100%;
+}
+.btns-spl{
+    display:none;
+}
+.side-img{
+    display:none;
 }
 @media screen and (min-width:540px){
     .new button{
@@ -278,8 +433,8 @@ div.signin img{
     margin-top:48px;
   }
   .new p{
-    width:18px;
     text-align:left;
+    width:6%;
   }
   .new button{
     width:14%;
@@ -303,9 +458,9 @@ div.signin img{
     .lens{
         display:flex;
     }
-    .list{
+    /* .list{
         margin-top:-304px;
-    }
+    } */
     .list-card2{
         display:grid;
         grid-template-columns:1fr 1fr;
@@ -316,9 +471,9 @@ div.signin img{
     .list h2{
         font-size:24px;
         width: 733px;
-        margin-bottom:32px;
-        margin-top:20px;
+        margin-bottom:29px;
         margin-inline:auto;
+        margin-top:-70px;
         font-family: 'Segoe UI',SegoeUI,'Helvetica Neue',Helvetica,Arial,sans-serif;
         letter-spacing:0.5;
     }
@@ -402,9 +557,9 @@ div.signin img{
         transform: scale(0.6);
         padding:1px 6px;
     }
-    .banner img{
-        height:60%;
-    }
+     .banner img{
+        height:81%;
+     }
     .lens a{
         text-decoration:none;
         color:#1a1a1f;
@@ -414,6 +569,7 @@ div.signin img{
     }
     .background{
         margin-top:-25px;
+        height:650px;   
     }
     .background h1{
         padding:22px;
@@ -458,6 +614,77 @@ div.signin img{
     .content p{
         margin-top:10px;
     }
+    .grids{
+        display:grid;
+        grid-template-columns:1fr 1fr 1fr;
+        grid-template-rows:1fr 1fr;
+        grid-auto-rows:1fr;
+    }
+    .page3 h2{
+        font-size:24px;
+        text-align:left;
+        margin-left:-69px;
+        letter-spacing:0.05ch;
+    }
+    .page3 .btn-ms{
+        display: none;
+    }
+    .btn-ma{
+        display: flex;
+        flex-direction: column;
+    }
+    .container{
+        display: flex;
+        flex-direction: row-reverse;
+    }
+    .btns button{
+        font-weight:400;
+        background-color:transparent;
+        margin-left:13px;
+        text-align:left;
+    }
+    .container-btn{
+        display: flex;
+        background-color:transparent;
+        border-left: 4px solid #0062ad;
+        color:#1a1a1f;
+        font-size:16px;
+        margin:0px 0px 0px 12px; 
+        width:99%;
+    }
+    .btns i{
+        display:none;
+    }
+    .container-btn button{
+        font-weight:600;
+    }
+    .btn-ma .btns{
+        background-color: transparent;
+        box-shadow: none;
+        border:none;
+        width:78%;
+    }
+    .products{
+        display:none;
+    }
+    .featured{
+        display:none;
+    }
+    .btns-spl{
+        display:flex;
+        color:#0062ad;
+        font-size:14px;
+        font-weight:600;
+        padding-right:1em;
+        position:relative;
+        text-decoration:none;  
+        margin-left:25px;
+    }
+    .btns-spl i{
+        transform: scale(1.5);
+        padding-left:8px;
+    }
+}
  @media screen and (min-width:961px){
     .banner{
         display:flex;
@@ -505,10 +732,30 @@ div.signin img{
         margin-left:22px;
     }
     .list h2{
-        margin-top:347px;
+        margin-top:66px;
+        width:99%;
+    }
+    .side-img{
+       display:flex;
+       width:40%;
+       box-sizing:inherit;
+       border-top-left-radius:12px;
+       border-bottom-left-radius:12px;
+       background-color:#000;
+       padding:3%;
+       box-shadow:0 10px 20px rgb(0 0 0/14%);
+       overflow: hidden;
+    }
+    .side-img img{
+        max-height:530px;
+        max-width:none;
+    }
+    .container{
+        display:flex;
+        flex-direction:row-reverse;
         width:100%;
     }
- }
+  }
  /* desktop screen */
  
  @media screen and (min-width:1080px) {
@@ -577,6 +824,10 @@ div.signin img{
 .learn{
     display:flex;
 }
+.new button{
+    height:47px;
+}
+
 header{
     max-width: 1317px;
     margin-inline: auto;
